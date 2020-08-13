@@ -5,6 +5,16 @@
  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
  @media screen and (max-width: 700px) {
    .display-3 {
-     font-size: calc(1.525rem + 3.3vw);
+     font-size: calc(1rem + 4.0vw);
    }
  }
+
+ .text-block {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: black;
+  color: white;
+  padding-left: 246px;
+  padding-right: 246px;
+}
