@@ -1,5 +1,5 @@
 # CWC
 
-Cook with chemistry webiste, hosted on PythonAnywhere.
+# Cook with chemistry website, hosted on PythonAnywhere.
 
-This reposititory contains wesbite data and functionality.
+#This repository contains website data and functionality.
