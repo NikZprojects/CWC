@@ -6,6 +6,23 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/recipes")
+def all_recipes():
+    return render_template("all_recipes.html")
+
+@app.route("/recipes/espresso")
+def espresso():
+    return render_template("recipes/espresso.html")
+
+@app.route("/recipes/cold_brew")
+def cold_brew():
+    return render_template("recipes/cold_brew.html")
+
+@app.route("/recipes/avocado_toast")
+def avocado_toast():
+    return render_template("recipes/avocado_toast.html")
+
+
 app.secret_key = 'UOAFNONFUA9128381.+RJN1'
 
 if __name__ == "__main__":
