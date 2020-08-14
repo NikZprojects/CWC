@@ -9,12 +9,31 @@
    }
  }
 
- .text-block {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  background-color: black;
-  color: white;
-  padding-left: 246px;
-  padding-right: 246px;
-}
+ .image {
+    position: relative;
+    width: 100%; /*for IE6 and earlier */
+ }
+
+ h2 {
+    position: relative;
+    color: white;
+    width: auto;
+    height: auto;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    text-align: center;
+    vertical-align: middle;
+ }
+
+ .caption {
+   position: absolute;
+   color: black;
+   top: 75%;
+   width: 100%;
+   height: 25%;
+
+   opacity: 0.6;
+   border: 0px;
+   background-color: black;
+   filter: alpha(opacity=60); /* for IE8 and earlier */
+ }
