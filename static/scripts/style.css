@@ -3,17 +3,20 @@
  }
 
  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
- @media screen and (max-width: 700px) {
+ @media screen and (max-width: 766px) {
    .display-3 {
-     font-size: calc(1.5rem + 4.0vw);
+     font-size: calc(1.5rem + 2vw);
    }
-   .h2 {
-     font-size: calc(0.75rem + 2vw);
+   h2 {
+     font-size: calc(1.5rem + 1vw);
    }
  }
-@media screen and (min-width: 700px) {
-  .h2 {
-    font-size: calc(0.25rem + 1.5vw);
+@media screen and (min-width: 767px) {
+  .display-3 {
+    font-size: calc(1.5rem + 3vw);
+  }
+  h2 {
+    font-size: calc(1rem + 1.3vw);
   }
 }
 
@@ -26,15 +29,16 @@
     position: relative;
     color: white;
     margin: 0px;
+    padding: 2px;
     text-align: center;
  }
 
  .caption {
    position: absolute;
    color: black;
-   top: 80%;
+   top: calc(80% - 10px);
    width: 100%;
-   height: 20%;
+   height: calc(20% + 10px);
    opacity: 0.6;
    border: 0px;
    background-color: black;
