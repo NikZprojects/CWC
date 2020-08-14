@@ -5,7 +5,10 @@
  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
  @media screen and (max-width: 700px) {
    .display-3 {
-     font-size: calc(1rem + 4.0vw);
+     font-size: calc(1.5rem + 4.0vw);
+   }
+   .h2 {
+     font-size: calc(1rem + 2vw);
    }
  }
 
@@ -16,11 +19,11 @@
 
  h2 {
     position: relative;
+    font-size: calc(1rem + 1vw);
     color: white;
     width: auto;
     height: auto;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding: 5px;
     text-align: center;
     vertical-align: middle;
  }
