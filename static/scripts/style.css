@@ -25,6 +25,12 @@
     width: 100%; /*for IE6 and earlier */
  }
 
+h1 {
+   font-family: helvetica;
+   white-space:pre-wrap;
+   font-size: 2rem;
+ }
+
  h2 {
     position: relative;
     color: white;
@@ -33,6 +39,16 @@
     text-align: center;
  }
 
+ pre {
+   font-family: helvetica;
+   white-space:pre-wrap;
+ }
+
+strong {
+  font-family: helvetica;
+  white-space:pre-wrap;
+  font-size: 1.5rem;
+}
  .caption {
    position: absolute;
    color: black;

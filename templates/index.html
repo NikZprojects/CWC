@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-
+<?php Header("Cache-Control: max-age=3600, must-revalidate"); ?>
 <html lang="en">
   <head>
-    <title>Cook with Chemistry</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Custom_Bootstrap-CSS / jQuery / Popper JS / Bootstrap-JS / Local-CSS -->
@@ -18,7 +17,10 @@
       <h1 class="display-3 pl-5 p-1">Cook with Chemistry</h1>
       <p class="font-weight-normal pl-5 pb-1">A food blog with a scientific twist</p>
     </div>
-
+  </body>
+  {% block content %}
+  <head><title>Cook with Chemistry</title></head>
+  <body class="container-fluid">
     <div class="row align-items-center ml-5 mr-5 p-2">
       <div class="col-md p-2">
         <a href="/recipes/espresso">
@@ -30,18 +32,20 @@
       <div class="col-md-3 p-2">
         <a href="/recipes/cold_brew">
           <div class="image"><img class="img-fluid rounded" src="/static/img/coldbrew-9.JPG"  alt="Cold Brew">
-            <div class="caption"><h2 class="align-middle">Cold Brew</h2></div>
+            <div class="caption"><h2>Cold Brew</h2></div>
           </div>
         </a>
       </div>
-      <a href="/recipes/avocado_toast">
-        <div class="col-md p-2">
-          <div class="image"><img class="img-fluid rounded" src="/static/img/avotoast-1.JPG"  alt="Avocado Toast">
-            <div class="caption"><h2>Avocado Toast</h2></div>
-          </div>
-      </a>
+      <div class="col-md p-2">
+        <a href="/recipes/avocado_toast">
+        <div class="image"><img class="img-fluid rounded" src="/static/img/avotoast-1.JPG"  alt="Avocado Toast">
+          <div class="caption"><h2>Avocado Toast</h2></div>
+        </div>
+        </a>
       </div>
     </div>
   </body>
+
+  {% endblock %}
 
 </html>
