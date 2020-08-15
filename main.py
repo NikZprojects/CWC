@@ -22,7 +22,6 @@ def cold_brew():
 def avocado_toast():
     return render_template("recipes/avocado_toast.html")
 
-
 app.secret_key = 'UOAFNONFUA9128381.+RJN1'
 
 if __name__ == "__main__":
