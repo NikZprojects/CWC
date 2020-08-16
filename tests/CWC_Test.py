@@ -1,5 +1,6 @@
 import os
 import webbrowser
+import subprocess
 from threading import Thread
 
 # Open CWC new incognito window (ensures fresh load)
@@ -10,10 +11,11 @@ def chrome():
 
 # Open localhost server running CWC website
 def localhost():
-    os.system('python ../main.py')
+    python_venv = os.path.abspath('../venv/Scripts/python.exe')
+    CWC_main = os.path.abspath('../main.py')
+    subprocess.Popen([python_venv, CWC_main])
 
 # Rub both of these simultaneously:
-
 if __name__ == '__main__':
     Thread(target=localhost).start()
     Thread(target=chrome).start()
