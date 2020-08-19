@@ -1,3 +1,8 @@
-@import "../source_files/scss/bootstrap";
-
 $enable-responsive-font-sizes: true;
+
+$theme-colors: (
+  "primary": #b0b0b0,
+  "secondary": #5071de
+);
+
+@import "../source_files/scss/bootstrap";

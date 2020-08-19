@@ -4,6 +4,10 @@
 
  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
  @media screen and (max-width: 766px) {
+   .logo {
+     margin-left: auto;
+     margin-right: auto
+   }
    .display-3 {
      font-size: calc(1.5rem + 2vw);
    }
