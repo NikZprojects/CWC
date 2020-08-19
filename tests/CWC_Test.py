@@ -15,7 +15,7 @@ def localhost():
     CWC_main = os.path.abspath('../main.py')
     subprocess.Popen([python_venv, CWC_main])
 
-# Rub both of these simultaneously:
+# Run both of these simultaneously:
 if __name__ == '__main__':
     Thread(target=localhost).start()
     Thread(target=chrome).start()
