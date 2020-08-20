@@ -13,11 +13,26 @@
     <link rel="stylesheet" href="/static/scripts/style.css">
   </head>
 
+
   <body class="container-fluid mw-100">
-    <div class="bg-primary text-white">
-      <div class="logo pl-3 p-1" style="width: 200px"><b><a href="/"><img class="img-fluid" src="/static/img/CWC-logo.png"  alt="CWC-logo"></a></b></div>
+    <div class="bg-primary">
+      <body class="container-fluid">
+        <div class="row">
+          <div class="mw-100 col-md-6 p-2">
+            <div class="logo"><a href="/"><img class="img-fluid" src="/static/img/CWC-logo-3.png"  alt="CWC-logo"></a></div>
+          </div>
+          <div class="col-md-6 p-2 align-self-center">
+            <div class="links d-flex justify-content-around">
+              <div class="h3 pl-4 pr-4"><a class="h3" href="/about/"><b>About</b></a></div>
+              <div class="h3 pl-4 pr-4"><a class="h3" href="/recipes/"><b>Recipes</b></a></div>
+              <div class="h3 pl-4 pr-4"><a class="h3" href="mailto:cookwithchemistryblog@gmail.com"><b>Contact</b></a></div>
+            </div>
+          </div>
+        </div>
+      </body>
     </div>
   </body>
+
   {% block content %}
   <head><title>Cook with Chemistry</title></head>
   <body class="container-fluid">
