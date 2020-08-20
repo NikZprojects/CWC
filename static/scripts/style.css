@@ -5,8 +5,9 @@
  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
  @media screen and (max-width: 766px) {
    .logo {
+     width: 200px;
      margin-left: auto;
-     margin-right: auto
+     margin-right: auto;
    }
    .display-3 {
      font-size: calc(1.5rem + 2vw);
@@ -16,6 +17,10 @@
    }
  }
 @media screen and (min-width: 767px) {
+  .logo {
+    width: 300px;
+    margin-left: calc(2em + 1vw);
+  }
   .display-3 {
     font-size: calc(1.5rem + 3vw);
   }
@@ -35,16 +40,15 @@ h1 {
    font-size: 2rem;
    font-style:bold;
  }
-
-a {
-  color:white;
-  text-shadow: 1px 2px black;
+a.h3 {
+  font-family: Krungthep;
+  font-size: calc(1rem + 1.5vw);
+  color: #002c69;
 }
 
 a:hover {
    text-decoration: none!important;
    color: white;
-   text-shadow: none;
 }
 
 h2 {
