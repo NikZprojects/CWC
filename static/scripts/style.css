@@ -40,10 +40,12 @@ h1 {
    font-size: 2rem;
    font-style:bold;
  }
+ 
 a.h3 {
   font-family: Krungthep;
   font-size: calc(1rem + 1.5vw);
   color: #002c69;
+  text-decoration: none!important;
 }
 
 a:hover {
