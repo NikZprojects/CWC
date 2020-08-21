@@ -1,9 +1,12 @@
 from flask import Flask, session, redirect, url_for, escape, request, render_template
+from os import path, environ
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
+    session.username = 'poopyhead'
+    session.get('username')
     return render_template("index.html")
 
 @app.route("/recipes")
@@ -38,7 +41,12 @@ def avocado_toast_redirect():
 def avocado_toast():
     return render_template("recipes/avocado_toast.html")
 
-app.secret_key = 'UOAFNONFUA9128381.+RJN1'
+secret_path = path.join(app.root_path, 'secret_key')
+if path.exists(secret_path):
+    app.secret_key = bytes(open(secret_path, 'r').read().rstrip(), 'UTF-8')
+else:
+    # For development only:
+    app.secret_key = b'AYfNiTbyX5gH0ILcdrjGRA'
 
 if __name__ == "__main__":
     app.run()
