@@ -5,8 +5,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    session.username = 'poopyhead'
-    session.get('username')
     return render_template("index.html")
 
 @app.route("/recipes")
