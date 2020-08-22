@@ -23,6 +23,14 @@ def all_recipes_redirect():
 def all_recipes():
     return render_template("all_recipes.html")
 
+@app.route("/experiments")
+def experiments_redirect():
+    return redirect("/experiments/", code=302)
+
+@app.route("/experiments/")
+def experiments():
+    return render_template("experiments.html")
+
 @app.route("/recipes/espresso")
 def espresso_redirect():
     return redirect("/recipes/espresso/", code=302)
