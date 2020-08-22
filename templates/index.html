@@ -15,28 +15,26 @@
 
 
   <body class="container-fluid mw-100">
-    <div class="bg-primary">
-      <body class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="logo p-2"><a href="/"><img class="img-fluid" src="/static/img/CWC-logo-3.png"  alt="CWC-logo"></a></div>
-          </div>
-          <div class="col-md-6 align-self-center">
-            <div class="links d-flex justify-content-around p-2">
-              <div class="h3 pl-4 pr-4"><a class="h3" href="/about/"><b>About</b></a></div>
-              <div class="h3 pl-4 pr-4"><a class="h3" href="/recipes/"><b>Recipes</b></a></div>
-              <div class="h3 pl-4 pr-4"><a class="h3" href="mailto:cookwithchemistryblog@gmail.com"><b>Contact</b></a></div>
-            </div>
+    <div class="bg-primary w-100">
+      <div class="row align-items-center mw-100 mx-0">
+        <div class="col-md">
+          <div class="logo p-2"><a href="/"><img class="img-fluid" src="/static/img/CWC-logo-3.png"  alt="CWC-logo"></a></div>
+        </div>
+        <div class="col-md">
+          <div class="row">
+            <div class="col-sm not-mobile"><p class ="text-center"><a class="h3 p-2" href="/about/">About</a></p></div>
+            <div class="col-sm"><p class ="text-center"><a class="h3 p-2" href="/recipes/">Recipes</a></p></div>
+            <div class="col-sm"><p class ="text-center"><a class="h3 p-2" href="/experiments/">Experiments</a></p></div>
           </div>
         </div>
-      </body>
+      </div>
     </div>
   </body>
 
   {% block content %}
   <head><title>Cook with Chemistry</title></head>
   <body class="container-fluid">
-    <div class="row align-items-center ml-5 mr-5 p-2">
+    <div class="row align-items-center mw-100 mx-3">
       <div class="col-md p-2">
         <a href="/recipes/espresso/">
           <div class="image"><img class="img-fluid rounded" src="/static/img/espresso-2.JPG"  alt="Espresso">
@@ -60,7 +58,16 @@
       </div>
     </div>
   </body>
-
   {% endblock %}
+
+  <body class = "container-fluid mw-100 mh-100">
+    <div class = "footer d-flex flex-column">
+      <p><br />
+      <a class="p-3"> Copyright &copy; 2020 Cook with Chemistry</a> |
+      <a class="p-3" href="/about/"> About </a> |
+      <a class="p-3" href="mailto:cookwithchemistryblog@gmail.com"> Contact </a> |
+      </p>
+    </div>
+  </body>
 
 </html>
