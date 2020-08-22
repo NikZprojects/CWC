@@ -2,30 +2,27 @@
   padding:0;
   margin:0;
  }
-
- /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+/* For lanscape phones/ small tablets only */
+ @media screen and (max-width: 1000px) {
+ .not-mobile {
+   display:none;
+ }
+}
+ /* Mobile only */
  @media screen and (max-width: 766px) {
    .logo {
      width: 200px;
      margin: auto;
    }
-   .not-mobile {
-     display:none;
-   }
-   .display-3 {
-     font-size: calc(1.5rem + 2vw);
-   }
    h2 {
      font-size: calc(1.5rem + 1vw);
    }
  }
+/* Desktop only */
 @media screen and (min-width: 767px) {
   .logo {
     width: 300px;
     margin-left: calc(2em + 1vw);
-  }
-  .display-3 {
-    font-size: calc(1.5rem + 3vw);
   }
   h2 {
     font-size: calc(1rem + 1.3vw);
@@ -44,14 +41,12 @@ h1 {
    font-style:bold;
  }
 
-p.a.h3 {
-  position: relative;
+a.h3 {
   text-decoration: none!important;
-  font-family: Krungthep;
-  font-size: calc(1rem + 2vw);
+  font-family: helvetica;
+  font-size: calc(1.2rem + 1vw);
   color: var(--secondary);
-  font-style:bold;
-  display:flex;
+  font-style:bolder;
 }
 a {
   color: var(--secondary);
@@ -87,12 +82,12 @@ strong {
    width: 100%;
    height: calc(20% + 10px);
    opacity: 0.6;
+   filter: alpha(opacity=60); /* for IE8 and earlier */
    border: 0px;
    background-color: black;
    display:flex;
    align-items: center;
    justify-content: center;
-   filter: alpha(opacity=60); /* for IE8 and earlier */
  }
 
  .footer {
@@ -100,6 +95,8 @@ strong {
     left: 0;
     bottom: 0;
     width: 100%;
+    opacity: 0.85;
+    filter: alpha(opacity=85); /* for IE8 and earlier */
     background-color: var(--primary);
     color: var(--secondary);
     text-align: center;
