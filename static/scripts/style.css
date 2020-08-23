@@ -13,6 +13,7 @@
    .logo {
      width: 200px;
      margin: auto;
+     opacity: 1;
    }
    h2 {
      font-size: calc(1.5rem + 1vw);
@@ -23,6 +24,7 @@
   .logo {
     width: 300px;
     margin-left: calc(2em + 1vw);
+    opacity: 1;
   }
   h2 {
     font-size: calc(1rem + 1.3vw);
@@ -40,8 +42,8 @@ h1 {
    font-size: 2rem;
    font-style:bold;
  }
-
 a.h3 {
+  opacity: 1;
   text-decoration: none!important;
   font-family: helvetica;
   font-size: calc(1.2rem + 1vw);
@@ -53,7 +55,7 @@ a {
 }
 a:hover {
    text-decoration: none!important;
-   color: white;
+   color:white;
 }
 
 h2 {
@@ -89,15 +91,17 @@ strong {
    align-items: center;
    justify-content: center;
  }
-
+a.footer:hover {
+  color: var(--gray)
+}
  .footer {
     position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
-    opacity: 0.85;
-    filter: alpha(opacity=85); /* for IE8 and earlier */
     background-color: var(--primary);
+    opacity:0.82;
+    filter: alpha(opacity=82); /* for IE8 and earlier */
     color: var(--secondary);
     text-align: center;
  }
