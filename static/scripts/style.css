@@ -16,7 +16,7 @@
      opacity: 1;
    }
    h2 {
-     font-size: calc(1.5rem + 1vw);
+     font-size: calc(1rem + 2vw);
    }
  }
 /* Desktop only */
@@ -31,6 +31,9 @@
   }
 }
 
+h2 span {
+  display:block;
+}
  .image {
     position: relative;
     width: 100%; /*for IE6 and earlier */
@@ -69,6 +72,7 @@ h2 {
 pre {
  font-family: helvetica;
  white-space:pre-wrap;
+ font-style: normal;
 }
 
 strong {
