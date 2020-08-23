@@ -55,13 +55,21 @@ def cold_brew_redirect():
 def cold_brew():
     return render_template("recipes/cold_brew.html")
 
-@app.route("/recipes/avocado_toast")
-def avocado_toast_redirect():
-    return redirect("/recipes/avocado_toast/", code=302)
+@app.route("/recipes/cookie_dough_cupcakes")
+def cookie_dough_cupcakes_redirect():
+    return redirect("/recipes/cookie_dough_cupcakes/", code=302)
 
-@app.route("/recipes/avocado_toast/")
-def avocado_toast():
-    return render_template("recipes/avocado_toast.html")
+@app.route("/recipes/cookie_dough_cupcakes/")
+def cookie_dough_cupcakes():
+    return render_template("recipes/cookie_dough_cupcakes.html")
+
+@app.route("/experiments/edible_cookie_dough")
+def edible_cookie_dough_redirect():
+    return redirect("/experiments/edible_cookie_dough/", code=302)
+
+@app.route("/experiments/edible_cookie_dough/")
+def edible_cookie_dough():
+    return render_template("experiments/edible_cookie_dough.html")
 
 secret_path = path.join(app.root_path, 'secret_key')
 if path.exists(secret_path):
