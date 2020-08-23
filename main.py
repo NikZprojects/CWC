@@ -31,6 +31,14 @@ def experiments_redirect():
 def experiments():
     return render_template("experiments.html")
 
+@app.route("/privacy_policy")
+def privacy_policy_redirect():
+    return redirect("/privacy_policy/", code=302)
+
+@app.route("/privacy_policy/")
+def privacy_policy():
+    return render_template("privacy_policy.html")
+
 @app.route("/recipes/espresso")
 def espresso_redirect():
     return redirect("/recipes/espresso/", code=302)
