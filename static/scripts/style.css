@@ -27,7 +27,7 @@
     opacity: 1;
   }
   h2 {
-    font-size: calc(1rem + 1.3vw);
+    font-size: calc(0.75rem + 1vw);
   }
 }
 
@@ -84,9 +84,9 @@ strong {
 .caption {
    position: absolute;
    color: black;
-   top: calc(80% - 10px);
+   top: calc(75% - 10px);
    width: 100%;
-   height: calc(20% + 10px);
+   height: calc(25% + 10px);
    opacity: 0.6;
    filter: alpha(opacity=60); /* for IE8 and earlier */
    border: 0px;
