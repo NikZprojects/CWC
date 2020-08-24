@@ -4,14 +4,12 @@ except ImportError:
     from distutils.core import setup
 
 config = {
-    'description': 'Cooking with Chemistry website',
+    'description': 'Cooking with Chemistry website - source code',
     'author': 'NikZProjects',
-    # Github link
-    'url': 'URL where to get it',
-    # Githib download file (tar/zip)
-    'download_url': 'URL where to download it',
+    'url': 'https://github.com/NikZprojects/CWC',
+    'download_url': 'https://github.com/NikZprojects/CWC/archive/master.zip',
     'author_email': 'NikZ.projects@gmail.com',
-    'version': '0.1',
+    'version': '0.2',
     'install_requires': ['flask', 'libsass'],
     'packages': ['CWC'],
     'scripts': [],
