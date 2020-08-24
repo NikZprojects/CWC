@@ -26,6 +26,10 @@
     margin-left: calc(2em + 1vw);
     opacity: 1;
   }
+  .article {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+  }
   h2 {
     font-size: calc(0.75rem + 1vw);
   }
@@ -42,6 +46,9 @@ p span {
     width: 100%; /*for IE6 and earlier */
  }
 
+p br {
+  line-height: 1px;
+}
 h1 {
    font-family: helvetica;
    white-space: pre-wrap;
