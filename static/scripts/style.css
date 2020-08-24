@@ -34,6 +34,9 @@
 h2 span {
   display:block;
 }
+p span {
+  display:block;
+}
  .image {
     position: relative;
     width: 100%; /*for IE6 and earlier */
@@ -98,6 +101,7 @@ strong {
 a.footer:hover {
   color: var(--gray)
 }
+
  .footer {
     position: relative;
     left: 0;
