@@ -4,7 +4,7 @@
  }
 /* For lanscape phones/ small tablets only */
  @media screen and (max-width: 1000px) {
- .not-mobile {
+ .about {
    display:none;
  }
 }
@@ -14,6 +14,9 @@
      width: 200px;
      margin: auto;
      opacity: 1;
+   }
+   .not-mobile {
+     display:none;
    }
    h2 {
      font-size: calc(1rem + 2vw);
@@ -68,7 +71,8 @@ a {
 }
 a:hover {
    text-decoration: none!important;
-   color:white;
+   opacity: 0.8;
+   filter: alpha(opacity=80); /* for IE8 and earlier */
 }
 
 h2 {
@@ -119,4 +123,43 @@ a.footer:hover {
     filter: alpha(opacity=82); /* for IE8 and earlier */
     color: var(--secondary);
     text-align: center;
+ }
+
+ .fa {
+   padding: 0.8em;
+   width: 4em;
+ }
+
+ .fa:hover {
+     opacity: 0.7;
+ }
+
+ .fa-instagram {
+   background: none;
+   color: var(--secondary);
+ }
+
+ .fa-pinterest {
+   background: none;
+   color: var(--secondary);
+ }
+
+ .fa-facebook {
+   background: none;
+   color: var(--secondary);
+ }
+
+ .fa-twitter {
+   background: none;
+   color: var(--secondary);
+ }
+
+ .fa-youtube {
+   background: none;
+   color: var(--secondary);
+ }
+
+ .fa-reddit {
+   background: none;
+   color: var(--secondary);
  }

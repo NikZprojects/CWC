@@ -14,30 +14,42 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/static/scripts/style.css">
+    <!-- social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
 
   <body class="container-fluid mw-100">
     <div class="header-bg bg-primary text-secondary w-100">
       <div class="container-fluid">
-        <div class="row mw-100 mx-0 align-items-center">
+        <div class="row mw-100 mx-0">
           <div class="col-md-5">
-            <div class="logo p-2"><a href="/"><img class="img-fluid" src="/static/img/CWC-logo-3.png"  alt="CWC-logo"></a></div>
+            <div class="logo p-2 mb-auto"><a href="/"><img class="img-fluid" src="/static/img/CWC-logo-3.png"  alt="CWC-logo"></a></div>
           </div>
           <div class="col-md mh-100">
-            <div class="container">
-                <div class="d-flex justify-content-around">
-                <div class="p-2 not-mobile"><p class="text-center"><a class="h3" href="/about/">About</a></p></div>
-                <div class="p-2"><p class="text-center"><a class="h3" href="/recipes/">Recipes</a></p></div>
-                <div class="p-2"><p class="text-center"><a class="h3" href="/experiments/">Experiments</a></p></div>
+            <div class="d-flex flex-column">
+              <div class="pt-4 not-mobile">
+                <div class="d-flex justify-content-end not-mobile">
+                  <a href=https://www.instagram.com/CookwithChemistry/ class="fa fa-instagram"></a>
+                  <a href=https://www.pinterest.com/CookwithChemistry/ class="fa fa-pinterest"></a>
+                  <a href=https://www.facebook.com/Cook-with-Chemistry-108998050919216 class="fa fa-facebook"></a>
+                  <a href=https://twitter.com/CookwithC class="fa fa-twitter"></a>
+                  <a href=https://www.youtube.com/channel/UC89zRxiEyi07BYh7RTpi4OA class="fa fa-youtube"></a>
+                  <a href=https://www.reddit.com/user/CookwithChemistry class="fa fa-reddit"></a>
                 </div>
+              </div>
+              <div class="p-4 not-mobile"></div>
+              <div class="d-flex justify-content-around">
+                <div class="px-2 about"><p class="text-center"><a class="h3" href="/about/">About</a></p></div>
+                <div class="px-2"><p class="text-center"><a class="h3" href="/recipes/">Recipes</a></p></div>
+                <div class="px-2"><p class="text-center"><a class="h3" href="/experiments/">Experiments</a></p></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <hr style="height:0.2em;border-width:0;background-color: var(--secondary); margin-top:0">
+  <hr style="height:0.2em;border-width:0;background-color: var(--secondary); margin-top:0">
   </body>
 
   {% block content %}
