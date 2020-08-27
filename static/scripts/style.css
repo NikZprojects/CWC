@@ -94,7 +94,9 @@ strong {
   white-space:pre-wrap;
   font-size: 1.5rem;
 }
-
+#table {
+  border: 2px solid var(--secondary);
+}
 .caption {
    position: absolute;
    color: black;
