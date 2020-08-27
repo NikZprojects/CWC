@@ -39,21 +39,13 @@ def privacy_policy_redirect():
 def privacy_policy():
     return render_template("privacy_policy.html")
 
-@app.route("/recipes/espresso")
-def espresso_redirect():
-    return redirect("/recipes/espresso/", code=302)
+@app.route("/recipes/sweet_cream_cold_brew")
+def sweet_cream_cold_brew_redirect():
+    return redirect("/recipes/sweet_cream_cold_brew/", code=302)
 
-@app.route("/recipes/espresso/")
-def espresso():
-    return render_template("recipes/espresso.html")
-
-@app.route("/recipes/cold_brew")
-def cold_brew_redirect():
-    return redirect("/recipes/cold_brew/", code=302)
-
-@app.route("/recipes/cold_brew/")
-def cold_brew():
-    return render_template("recipes/cold_brew.html")
+@app.route("/recipes/sweet_cream_cold_brew/")
+def sweet_cream_cold_brew():
+    return render_template("recipes/sweet_cream_cold_brew.html")
 
 @app.route("/recipes/cookie_dough_cupcakes")
 def cookie_dough_cupcakes_redirect():
