@@ -55,9 +55,16 @@ p br {
 h1 {
    font-family: helvetica;
    white-space: pre-wrap;
-   font-size: 2rem;
+   font-size: calc(1.3rem + 1.1vw);
    font-style:bold;
  }
+i {
+  font-family: helvetica;
+  white-space: pre-wrap;
+  font-size: calc(0.8rem + 0.7vw);
+  line-height:0.5rem;
+}
+
 a.h3 {
   opacity: 1;
   text-decoration: none!important;
@@ -67,14 +74,16 @@ a.h3 {
   font-style:bolder;
 }
 a {
-  color: var(--secondary);
+  color: var(--blue);
 }
 a:hover {
    text-decoration: none!important;
-   opacity: 0.8;
-   filter: alpha(opacity=80); /* for IE8 and earlier */
+   opacity: 0.7;
+   filter: alpha(opacity=70); /* for IE8 and earlier */
 }
-
+a.footer {
+  color: var(--secondary);
+}
 h2 {
   position: relative;
   color: white;
@@ -87,12 +96,13 @@ pre {
  font-family: helvetica;
  white-space:pre-wrap;
  font-style: normal;
+ font-size: calc(0.8rem + 0.5vw);
 }
 
 strong {
   font-family: helvetica;
   white-space:pre-wrap;
-  font-size: 1.5rem;
+  font-size: calc(1.5rem + 1.1vw);
 }
 #table {
   border: 2px solid var(--secondary);
@@ -115,7 +125,7 @@ a.footer:hover {
   color: var(--gray)
 }
 
- .footer {
+div.footer {
     position: relative;
     left: 0;
     bottom: 0;
