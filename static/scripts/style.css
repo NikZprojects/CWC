@@ -98,7 +98,12 @@ pre {
  font-style: normal;
  font-size: calc(0.8rem + 0.5vw);
 }
-
+pre {
+ font-family: helvetica;
+ white-space:pre-wrap;
+ font-style: bold;
+ font-size: calc(1rem + 0.5vw);
+}
 strong {
   font-family: helvetica;
   white-space:pre-wrap;
@@ -179,3 +184,25 @@ div.footer {
    background: none;
    color: var(--secondary);
  }
+
+/* for calorie calc form */
+form {
+  display:table;
+}
+form div {
+  display: table-row;
+}
+form label {
+  display: table-cell;
+  padding-right: 3px;
+}
+form input {
+  display: table-cell;
+  text-align:center;
+  width:4em;
+  border: none;
+  border-bottom: 2px solid var(--secondary);
+}
+form input:focus{
+  background-color: #d1d1d1;
+}
