@@ -6,9 +6,19 @@
 <div class="article row m-0 mw-100">
 <div class="col-md-7 ml-3 mr-3">
 <h1><b>Vanilla Sweet Cream Cold Brew</b></h1>
-
 <i>The closest you can get to Starbucks at home.</i>
-
+<script>
+$(document).ready(function (){
+    $("#jumptorecipe").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#recipe").offset().top
+        }, 1500);
+    });
+});
+</script>
+<br />
+<br />
+<center><button id="jumptorecipe">Jump to recipe</button></center>
 <pre>
 
 <div class="image mw-100"><img class="img-fluid rounded" src="/static/img/sweet_cream_cold_brew/1.JPG"  alt="Cold Brew-0"></div>
@@ -76,7 +86,7 @@ To make the vanilla sweet cream we just need to combine everything except the va
 Then, simply drizzle the sweet cream on top of the cold brew. The recipe below is enough for 5-10 16-oz vanilla sweet cream cold brews (16-oz including the ice). You should use a ratio of 2 Tablespoons of vanilla sweet cream to 16-oz of combined cold brew & ice to get as close as possible to Starbucks’ ratio. But you can obviously adjust this as you see fit. Add more or less to match your desired level of creaminess and/or sweetness.
 
 <div class="image mw-100"><img class="img-fluid rounded" src="/static/img/sweet_cream_cold_brew/11.JPG"  alt="Cold Brew-0"></div>
-<strong>Recipe:</strong>
+<strong id="recipe">Recipe:</strong>
 
 <b>Vanilla Sweet Cream (makes 5-10 Sweet Cream Cold Brews):</b>
 ½ cup heavy cream
