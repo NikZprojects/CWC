@@ -97,16 +97,14 @@ h2 {
 
 pre {
  font-family: helvetica;
- white-space:pre-wrap;
- font-style: normal;
+ white-space: pre-wrap; /* CSS3 */
+ white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+ white-space: -pre-wrap; /* Opera 4-6 */
+ white-space: -o-pre-wrap; /* Opera 7 */
+ word-wrap: break-word; /* Internet Explorer 5.5+ */
  font-size: calc(0.8rem + 0.5vw);
 }
-pre {
- font-family: helvetica;
- white-space:pre-wrap;
- font-style: bold;
- font-size: calc(1rem + 0.5vw);
-}
+
 strong {
   font-family: helvetica;
   white-space:pre-wrap;
