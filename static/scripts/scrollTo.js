@@ -1,7 +1,7 @@
 $(document).ready(function (){
-    $("#click").click(function (){
+    $("#jumpToRecipe").click(function (){
         $('html, body').animate({
-            scrollTop: $("#div1").offset().top
-        }, 2000);
+            scrollTop: $("#recipe").offset().top
+        }, 1500);
     });
 });

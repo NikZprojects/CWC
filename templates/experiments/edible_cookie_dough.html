@@ -1,30 +1,5 @@
-{% extends "index.html" %}
-{% block content %}
-<head><title>Edible Cookie Dough</title></head>
-
-<body class="container-fluid">
-<div class="article row m-0 mw-100">
-<div class="col-md-7 ml-3 mr-3">
-<h1><strong>Experiment #001: Edible Cookie Dough</strong></h1>
-<i>Can baking soda improve the taste of edible cookie dough?</i>
-<script>
-$(document).ready(function (){
-    $("#jumpToRecipe").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#recipe").offset().top
-        }, 1500);
-    });
-});
-</script>
-<br />
-<br />
-<div class="d-flex justify-content-center">
-<div class="p-2"><button class="btn btn-secondary" id="jumpToRecipe">Jump to recipe</button></div>
-<div class="p-2"></div>
-<div class="p-2"><a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" data-pin-custom="true">
-  <button class="btn btn-secondary">Pin it!</button>
-  </a></div>
-</div>
+{% extends "recipes/_recipe_template.html" %}
+{% block recipe %}
 <pre>
 
 <div class="image mw-100"><img class="img-fluid rounded" src="/static/img/cookie_dough/2.JPG"  alt="Cookie Dough Array"></div>
@@ -96,8 +71,4 @@ Long story short, a small pinch of baking soda can elevate your edible cookie do
 <li><a href="https://www.fda.gov/food/buy-store-serve-safe-food/what-you-need-know-about-egg-safety" target="_blank">https://www.fda.gov/<wbr>food/buy-store-serve-safe-food/what-you-need-know-about-egg-safety</a></li>
 <li><a href="https://www.cookingclassy.com/edible-cookie-dough/" target="_blank">https://www.cookingclassy.com/<wbr>edible-cookie-dough/</a></li></ol>
 </pre>
-</div>
-<div class="col-sm"></div>
-</div>
-</body>
 {% endblock %}
