@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+{% block content %}
+<head><title>{{ name }}</title></head>
+<body class="container-fluid">
+<div class="article row m-0 mw-100">
+<div class="col-md-7 ml-3 mr-3">
+<div><strong>{{ name }}</strong></div>
+<div><i>{{ description }}</i></div>
+<script src ="/static/scripts/scrollTo.js"></script>
+<br />
+<div class="d-flex justify-content-center">
+<div class="p-2"><button class="btn btn-secondary" id="jumpToRecipe">Jump to recipe</button></div>
+<div class="p-2"></div>
+<div class="p-2"><a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" data-pin-custom="true">
+  <button class="btn btn-secondary">Pin it!</button>
+  </a></div>
+</div>
+{% block recipe %}
+{% endblock %}
+<p>Cook with Chemistry is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.</p>
+</div>
+<div class="col-sm"></div>
+</div>
+</body>
+{% endblock %}

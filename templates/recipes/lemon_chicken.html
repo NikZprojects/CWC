@@ -1,29 +1,5 @@
-{% extends "index.html" %}
-{% block content %}
-<head><title>Simple & Healthy Lemon Chicken</title></head>
-
-<body class="container-fluid">
-<div class="article row m-0 mw-100">
-<div class="col-md-7 ml-3 mr-3">
-<div><strong>Simple & Healthy Lemon Chicken</strong></div>
-<div><i>The best 470 calorie dinner you'll have this week.</i></div>
-<script>
-$(document).ready(function (){
-    $("#jumpToRecipe").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#recipe").offset().top
-        }, 1500);
-    });
-});
-</script>
-<br />
-<div class="d-flex justify-content-center">
-<div class="p-2"><button class="btn btn-secondary" id="jumpToRecipe">Jump to recipe</button></div>
-<div class="p-2"></div>
-<div class="p-2"><a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" data-pin-custom="true">
-  <button class="btn btn-secondary">Pin it!</button>
-  </a></div>
-</div>
+{% extends "recipes/_recipe_template.html" %}
+{% block recipe %}
 <pre>
 
 <div class="image mw-100"><img class="img-fluid rounded" src="/static/img/lemon_chicken/1.JPG"  alt="Simple and Healthy Lemon Chicken"></div>
@@ -107,9 +83,4 @@ Then just plate to serve, and you’re done! Like I said, this recipe is simple,
 <li>Remove from the heat. Squeeze the lemon juice over the chicken and add the lemons halves to the pan. If using lemon juice, just pour the lemon juice evenly over the chicken.</li>
 <li>Turn the chicken to evenly coat with the lemon juice in the pan. Add additional salt and pepper to taste if desired.</li>
 <li>Plate with a slice of lemon for garnish, and enjoy!</li></ol></pre>
-<p>Cook with Chemistry is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.</p>
-</div>
-<div class="col-sm"></div>
-</div>
-</body>
 {% endblock %}
