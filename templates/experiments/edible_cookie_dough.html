@@ -6,9 +6,19 @@
 <div class="article row m-0 mw-100">
 <div class="col-md-7 ml-3 mr-3">
 <h1><strong>Experiment #001: Edible Cookie Dough</strong></h1>
-
 <i>Can baking soda improve the taste of edible cookie dough?</i>
-
+<script>
+$(document).ready(function (){
+    $("#jumpToRecipe").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#recipe").offset().top
+        }, 1500);
+    });
+});
+</script>
+<br />
+<br />
+<center><button id="jumpToRecipe">Jump to recipe</button></center>
 <pre>
 
 <div class="image mw-100"><img class="img-fluid rounded" src="/static/img/cookie_dough/2.JPG"  alt="Cookie Dough Array"></div>
@@ -51,7 +61,7 @@ We both agreed that the small amount of baking soda added to Sample 2 created th
 
 Long story short, a small pinch of baking soda can elevate your edible cookie dough to remind you more of the real deal. I am nearly certain that it adds an unmistakable flavor that cannot be omitted without affecting the flavor of your cookie dough. I encourage you to try out this experiment yourself and sharing your results with us. You can do so by sharing your favorite with the hashtag #CWCcookiedough.
 
-<strong>Recipe:</strong>
+<strong id="recipe">Recipe:</strong>
 
 <b>Ingredients:</b>
 

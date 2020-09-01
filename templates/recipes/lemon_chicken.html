@@ -5,17 +5,27 @@
 <body class="container-fluid">
 <div class="article row m-0 mw-100">
 <div class="col-md-7 ml-3 mr-3">
-
+<div><strong>Simple & Healthy Lemon Chicken</strong></div>
+<div><i>The best 470 calorie dinner you'll have this week.</i></div>
+<script>
+$(document).ready(function (){
+    $("#jumpToRecipe").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#recipe").offset().top
+        }, 1500);
+    });
+});
+</script>
+<br />
+<center><button id="jumpToRecipe">Jump to recipe</button></center>
 <pre>
-<strong>Simple & Healthy Lemon Chicken</strong>
-<i>The best 470 calorie dinner you'll have this week.</i>
 
 <div class="image mw-100"><img class="img-fluid rounded" src="/static/img/lemon_chicken/1.JPG"  alt="Simple and Healthy Lemon Chicken"></div>
 In May, I was on a big heath kick. I had just completed the <a href = "https://amzn.to/3bawphH" target="_blank"> Insanity workout program</a>, and I was feeling motivated to continue focusing on health throughout 2020. In the past, I would think being healthy meant eating plain chicken in a pan with a side of steamed broccoli… and then wonder why I couldn't stick with it over the long-term. I now realize that long-term heath means making compromises between what is not only nutritious, but easy to sustain too (read: tasty). Long-term consistency will always beat out short-term motivation.
 
 I believe that this recipe strikes the perfect balance between nutrition and sustainability: it’s low calorie, high in protein (50 grams per serving!) and it tastes great too. It uses a seasoned flour mixture to create a flavorful golden-brown crust, and lemon juice to provide a crisp freshness that is perfect for the summer. Even better, the all-purpose flour can be substituted out to fit many diet plans. For example, you can use <a href= "https://amzn.to/31JszsM" target="_blank">almond flour</a> to make this low-carb/keto friendly, or <a href= "https://amzn.to/31GrT7g" target="_blank">brown rice flour</a> to make this gluten-free.
 
-<div class="image mw-100"><img class="img-fluid rounded" src="/static/img/lemon_chicken/5.JPG"  alt="Simple and Healthy Lemon Chicken"></div>
+<div id="div1" class="image mw-100"><img class="img-fluid rounded" src="/static/img/lemon_chicken/5.JPG"  alt="Simple and Healthy Lemon Chicken"></div>
 On the other hand, if you’re like me using a calorie-counting approach (it’s more fun than it sounds), I have a couple tips for you for this recipe. By measuring the weight of the flour before and after dredging the chicken, I found that less than half of it actually ended up on the chicken, and therefore on our plates. After accounting for this, the flour only ended up contributing about 100 calories to this dish while adding a really nice texture and browning. To calculate this for yourself, I’ve created a simple calorie calculator that accounts for all the ingredients contributing calories in this recipe. If you follow this recipe, your values should end up relatively close to these. But feel free to adjust any or all of these to get an accurate calorie count for your dinner.
 <script src="/static/scripts/caloriecalc.js"></script>
 <hr style="height:0.1em;border-width:0;background-color: var(--secondary); margin:0">
@@ -68,7 +78,7 @@ Finally, add the juice of a lemon on top of all the chicken. We’ve found that 
 Then just plate to serve, and you’re done! Like I said, this recipe is simple, tasty and healthy too! This has been a weekly recipe for us since we started making it and I highly recommend you try it out. We hope you enjoy it as much as we have these last few months.
 
 <div class="image mw-100"><img class="img-fluid rounded" src="/static/img/lemon_chicken/4.JPG"  alt="Simple and Healthy Lemon Chicken"></div>
-<strong>Recipe:</strong>
+<div id="recipe"><strong>Recipe:</strong></div>
 1 lb (16 oz) boneless, skinless chicken breasts.
 2 large eggs
 ½ cup all-purpose flour (or flour of your choice!)

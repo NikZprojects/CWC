@@ -8,6 +8,18 @@
 
 <h1><b>Chocolate Chip Cookie Dough Cupcakes</b></h1>
 <i>Vanilla cupcakes with a soft, cookie dough center.</i>
+<script>
+$(document).ready(function (){
+    $("#jumpToRecipe").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#recipe").offset().top
+        }, 1500);
+    });
+});
+</script>
+<br />
+<br />
+<center><button id="jumpToRecipe">Jump to recipe</button></center>
 <pre>
 
 <div class="image mw-100"><img class="img-fluid rounded" src="/static/img/cookie_dough_cupcakes/5.JPG"  alt="Cookie Dough Cupcakes"></div>
@@ -62,7 +74,7 @@ This brings us to our final step: frosting the cupcakes. You can use a pastry ba
 
 Again, I highly recommend this recipe, it was unlike any other cupcake I’ve had before, homemade and store-bought included. I promise you won’t regret trying it. Serve with a glass of cold milk of your choice and enjoy! These cupcakes are great both at room temperature and refrigerated. The cool cookie dough in the center is really satisfying against the vanilla cake. If you try out the recipe, make sure to share it with us with the hashtag #CWCcupcakes.
 
-<strong>Recipe (makes 12 cupcakes):</strong>
+<strong id="recipe">Recipe (makes 12 cupcakes):</strong>
 
 <b>Edible Cookie Dough:</b>
 Our edible cookie dough recipe is <a href = "https://www.cookwithchemistry.com/experiments/edible_cookie_dough/" target="_blank">available here</a>.
