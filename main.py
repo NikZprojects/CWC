@@ -28,6 +28,15 @@ def all_recipes_redirect():
 def all_recipes():
     return render_template("all_recipes.html")
 
+@app.route("/recipes/breakfast_sandwich")
+def breakfast_sandwich_redirect():
+    return redirect("/recipes/breakfast_sandwich/", code=302)
+@app.route("/recipes/breakfast_sandwich/")
+def breakfast_sandwich():
+    name = "Deli-Style Breakfast Sandwich"
+    description = "Bagel shop taste from the comfort of your own home."
+    return render_template("recipes/breakfast_sandwich.html", name=name, description=description)
+
 @app.route("/recipes/cookie_dough_cupcakes")
 def cookie_dough_cupcakes_redirect():
     return redirect("/recipes/cookie_dough_cupcakes/", code=302)
