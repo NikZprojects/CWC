@@ -78,6 +78,10 @@ def page_not_found(e):
 def server_error(e):
     return render_template('errors/500.html'), 500
 
+@app.route('/sitemap.xml')
+def site_map():
+    return render_template('sitemap.xml')
+
 secret_path = path.join(app.root_path, 'secret_key')
 if path.exists(secret_path):
     app.secret_key = bytes(open(secret_path, 'r').read().rstrip(), 'UTF-8')
