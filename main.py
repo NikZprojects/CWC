@@ -28,6 +28,15 @@ def all_recipes_redirect():
 def all_recipes():
     return render_template("all_recipes.html")
 
+@app.route("/recipes/banana_bread")
+def banana_bread_redirect():
+    return redirect("/recipes/banana_bread/", code=302)
+@app.route("/recipes/banana_bread/")
+def banana_bread():
+    name = "The Best Banana Bread (Two Ways)"
+    description = "You can't go wrong with this banana bread recipe."
+    return render_template("recipes/banana_bread.html", name=name, description=description)
+
 @app.route("/recipes/breakfast_sandwich")
 def breakfast_sandwich_redirect():
     return redirect("/recipes/breakfast_sandwich/", code=302)
